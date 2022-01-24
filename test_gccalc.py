@@ -25,12 +25,15 @@ def test_empty_seq():
     obs = calc_gc_content(seq)
     assert obs == exp
 
-@pytest.mark.skip(reason="no way of currently testing this")
+@pytest.mark.skip(reason="Cleaning not yet implemented.")
 def test_invalid_characters():
     seq = "GGGGGCCCCCAAAAATTTTTXXXXX"
     exp = 50.0
     obs = calc_gc_content(seq)
     assert obs == exp
+
+
+
 
 test_mid_gc()
 test_high_gc()
