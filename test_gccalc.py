@@ -25,7 +25,7 @@ def test_empty_seq():
     obs = calc_gc_content(seq)
     assert obs == exp
 
-@git init
+
 def test_invalid_characters():
     seq = "GGGGGCCCCCAAAAATTTTTXXXXX"
     exp = 50.0
