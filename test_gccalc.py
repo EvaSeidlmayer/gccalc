@@ -28,7 +28,7 @@ def test_empty_seq():
 @pytest.mark.skip(reason="Cleaning not yet implemented.")
 def test_invalid_characters():
     seq = "GGGGGCCCCCAAAAATTTTTXXXXX"
-    exp = 50.0
+    exp = 40.0
     obs = calc_gc_content(seq)
     assert obs == exp
 
